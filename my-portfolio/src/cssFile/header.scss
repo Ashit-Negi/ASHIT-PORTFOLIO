@@ -31,18 +31,18 @@ $nav-hover-color: #f8d210;
   .navbar-toggler {
     border: none;
     outline: none;
+    padding: 5px;
 
     &:focus {
       box-shadow: none;
     }
 
     .navbar-toggler-icon {
-      background-image: none;
+      display: block;
       width: 30px;
       height: 3px;
       background-color: $nav-link-color;
       position: relative;
-      display: block;
       transition: all 0.3s ease-in-out;
 
       &::before,
@@ -96,6 +96,30 @@ $nav-hover-color: #f8d210;
       display: block;
       padding: 10px;
       font-size: 1.2rem;
+    }
+  }
+
+  // Ensure the navbar toggler icon is properly visible
+  .navbar-toggler-icon {
+    display: block !important;
+  }
+
+  // Fix image and head visibility
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      max-width: 70%; // Adjust image size for better mobile fit
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .intro-text {
+      font-size: 1.5rem;
+      margin-top: 15px;
     }
   }
 }
