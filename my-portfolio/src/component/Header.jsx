@@ -22,7 +22,7 @@ function Header({ activeSection, isScrolled }) {
     const section = document.getElementById(id);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - 80,
+        top: section.offsetTop - 65,
         behavior: "smooth",
       });
       closeNav();

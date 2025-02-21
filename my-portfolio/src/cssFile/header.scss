@@ -1,47 +1,101 @@
-html {
-  scroll-behavior: smooth;
-}
+// Define color variables
+$primary-color: #0d6efd; // Bootstrap primary color
+$nav-bg: rgba(6, 0, 0, 0.8);
+$nav-bg-scrolled: rgba(0, 0, 0, 0.9);
+$nav-link-color: #fff;
+$nav-hover-color: #f8d210;
 
+// Navbar styling
 .navbar {
-  background: rgba(36, 34, 34, 0.8) !important;
-  transition: all 0.3s ease-in-out;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  background: $nav-bg;
+  padding: 1rem;
+  transition: background 0.3s ease-in-out;
+
+  &.scrolled {
+    background: $nav-bg-scrolled;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $primary-color;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $nav-hover-color;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: none;
+      width: 30px;
+      height: 3px;
+      background-color: $nav-link-color;
+      position: relative;
+      display: block;
+      transition: all 0.3s ease-in-out;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: $nav-link-color;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $nav-link-color;
+      margin: 0 10px;
+      transition: color 0.3s ease-in-out;
+
+      &:hover,
+      &.active {
+        color: $nav-hover-color;
+        border-bottom: 2px solid $nav-hover-color;
+      }
+    }
+  }
 }
 
-.scrolled {
-  background: rgba(0, 0, 0, 0.9) !important; // Ensure it's visible
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+// Responsive styles for mobile
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: $nav-bg;
+    padding: 1rem;
+    text-align: center;
+  }
 
-// Navbar brand styles
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white !important;
-}
-
-// Navbar links
-.navbar-nav .nav-link {
-  color: white !important;
-  font-size: 1.2rem;
-  padding: 10px 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-// Navbar link hover effect
-.navbar-nav .nav-link:hover {
-  color: #f39c12 !important;
-  transform: scale(1.1);
-}
-
-// Active link styling
-.navbar-nav .nav-link.active {
-  color: #f39c12 !important;
-  font-weight: bold;
-  border-bottom: 2px solid #f39c12;
+  .navbar-nav {
+    .nav-link {
+      display: block;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+  }
 }
