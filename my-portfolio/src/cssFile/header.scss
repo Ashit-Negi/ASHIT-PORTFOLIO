@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: rgba(36, 34, 34, 0.8) !important;
+  transition: all 0.3s ease-in-out;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.scrolled {
+  background: rgba(0, 0, 0, 0.9) !important; // Ensure it's visible
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+// Navbar brand styles
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+// Navbar links
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+// Navbar link hover effect
+.navbar-nav .nav-link:hover {
+  color: #f39c12 !important;
+  transform: scale(1.1);
+}
+
+// Active link styling
+.navbar-nav .nav-link.active {
+  color: #f39c12 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #f39c12;
+}
