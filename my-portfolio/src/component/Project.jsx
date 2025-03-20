@@ -32,10 +32,11 @@ const projects = [
   },
   {
     title: "Wheather-App",
-    description: "This is my project 1",
+    description:
+      "A dynamic Weather App that fetches real-time weather data using WeatherAPI. It displays temperature, humidity, wind speed, and weather icons based on conditions, with a sleek gradient UI and responsive design",
     image: weatherImage,
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/Ashit-Negi/WEATHER-APP",
+    liveLink: "https://ashit-negi.github.io/WEATHER-APP/",
   },
   {
     title: "Photographic-App",
