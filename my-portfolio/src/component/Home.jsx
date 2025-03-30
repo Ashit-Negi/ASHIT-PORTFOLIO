@@ -48,10 +48,22 @@ function Home() {
 
             {/* Buttons */}
             <div className="btn-group">
-              <Button variant="primary" href="/Ashit-Resume.pdf" download>
+              <Button
+                variant="primary"
+                href="/ASHIT-PORTFOLIO/AshitNegi-Resume.pdf"
+                download
+              >
                 My Resume
               </Button>
-              <Button variant="outline-light" href="/contact">
+              <Button
+                variant="outline-light"
+                onClick={() => {
+                  const contactSection = document.getElementById("contact");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Contact Me
               </Button>
             </div>
