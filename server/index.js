@@ -15,6 +15,12 @@ app.use(express.json());
 app.use("/contact", contactRoutes);
 console.log("contact routes loaded");
 
+app.get("", (req, res) => {
+  res.status(200).json({
+    message: "Hi, I am listening to your requests!",
+  });
+});
+
 app.listen(port, () => {
   console.log(`sever is running on ${port}`);
 });

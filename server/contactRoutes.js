@@ -12,9 +12,6 @@ const transporter = nodemailer.createTransport({
     pass: EMAIL.email_password,
   },
 });
-router.get("/message", async (req, res) => {
-  console.log("server is listning");
-});
 router.post("/", async (req, res) => {
   console.log("Request body:", req.body);
   console.log("Request body:", req);
