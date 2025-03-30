@@ -3,7 +3,7 @@ export const sendContactMessage = async ({ name, email, message, number }) => {
     console.log("Sending request...");
 
     const response = await fetch(
-      "https://ashit-portfolio-1.onrender.com/contact",
+      "https://ashit-portfolio.onrender.com/contact",
       {
         method: "POST",
         headers: {
