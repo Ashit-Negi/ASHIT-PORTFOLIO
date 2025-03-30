@@ -4,7 +4,8 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-import image from "../assets/projectImages/DSR_1364-removebg-preview.png";
+import image from "../assets/projectImages/negi1111.jpg";
+import image2 from "../assets/projectImages/ghiblifyImage.png";
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
         <Row>
           {/* Profile Image Section */}
           <Col md={6} className="image-container">
-            <img src={image} alt="Ashit-Negi" className="profile-img" />
+            <img src={image2} alt="Ashit-Negi" className="profile-img" />
           </Col>
 
           {/* Introduction Section */}
