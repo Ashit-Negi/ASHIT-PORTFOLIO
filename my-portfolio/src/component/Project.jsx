@@ -27,8 +27,8 @@ const projects = [
     title: "Movie-ticket-app",
     description: "This is my project 1",
     image: movieTicket,
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/Ashit-Negi/BookMyShow-Clone",
+    liveLink: "https://bookmyshow-clone-c4rs.onrender.com",
   },
   {
     title: "Wheather-App",
