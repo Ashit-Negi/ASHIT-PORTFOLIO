@@ -18,14 +18,16 @@ const projects = [
   },
   {
     title: "Food-App",
-    description: "This is my project 1",
+    description:
+      "A full-stack food delivery web application that allows users to discover nearby restaurants, browse menus, add items to cart, and place secure online orders. The platform includes role-based access for customers and restaurant owners, real-time order management, and integrated online card payments.",
     image: foodImage,
     githubLink: "https://github.com/Ashit-Negi/FOOD-DEL",
     liveLink: "https://food-del-seven-topaz.vercel.app/",
   },
   {
     title: "Movie-ticket-app",
-    description: "This is my project 1",
+    description:
+      "A BookMyShow-inspired web application that enables users to browse movies, view show details, select seats, and book tickets through an interactive and user-friendly interface. The project focuses on replicating the core user experience of an online movie ticket booking platform.",
     image: movieTicket,
     githubLink: "https://github.com/Ashit-Negi/BookMyShow-Clone",
     liveLink: "https://bookmyshow-clone-c4rs.onrender.com",
