@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 import image from "../assets/projectImages/negi1111.jpg";
-import image2 from "../assets/projectImages/ghiblifyImage.png";
+import image2 from "../assets/projectImages/ashit.png";
 
 function Home() {
   return (
