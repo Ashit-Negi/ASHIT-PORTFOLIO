@@ -20,8 +20,8 @@ const projects = [
     title: "Food-App",
     description: "This is my project 1",
     image: foodImage,
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/Ashit-Negi/FOOD-DEL",
+    liveLink: "https://food-del-seven-topaz.vercel.app/",
   },
   {
     title: "Movie-ticket-app",
@@ -45,13 +45,6 @@ const projects = [
     image: photographicImage,
     githubLink: "https://github.com/Ashit-Negi/photos-apps",
     liveLink: "https://ashit-negi.github.io/photos-apps/#/",
-  },
-  {
-    title: "Brand-App",
-    description: "This is my project 1",
-    image: brandImage,
-    githubLink: "",
-    liveLink: "",
   },
 ];
 function Project() {
