@@ -50,7 +50,7 @@ function Home() {
             <div className="btn-group">
               <Button
                 variant="primary"
-                href="/ASHIT-PORTFOLIO/AshitNegi-Resume.pdf"
+                href="/ASHIT-PORTFOLIO/Ashit_Negi_Resume.pdf"
                 download
               >
                 My Resume
